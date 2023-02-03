@@ -1,9 +1,23 @@
 
-# Lunar Lander - DQN
+# 
 
-A simple PyTorch implementation of the Deep Q-Learning algorithm to solve [Lunar Lander environment from Gymnasium](https://gymnasium.farama.org/environments/box2d/lunar_lander/).
+<h1 align="center">
+  <br>
+  Lunar Lander - DQN
+  <br>
+</h1>
 
-> AI course project @ UniCT.
+
+
+<p align="center">
+  <img src="docs/assets/ezgif.com-gif-maker.gif" alt="animated" />
+</p>
+
+<h4 align="center">A simple PyTorch implementation of the Deep Q-Learning algorithm to solve <a href="https://gymnasium.farama.org/environments/box2d/lunar_lander/">Lunar Lander environment from Gymnasium</a>.</h4>
+
+******
+
+<p align="center">AI Course Project - UniCT, DMI.</p>
 
 
 ## Installation
@@ -52,6 +66,18 @@ optional arguments:
   --sync-rate SYNC_RATE     sync rate of the target network
 ```
 
+Visually validate the agent using the `play.py` script: 
+
+```bash
+(your_env) <Lunar-Lander-DQN> python play.py --help
+
+usage: play.py [-h] [--model-ckpt MODEL_CKPT] [--episodes EPISODES]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --model-ckpt MODEL_CKPT
+  --episodes EPISODES
+```
 
 ## Authors
 

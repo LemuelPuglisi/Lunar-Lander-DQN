@@ -21,19 +21,13 @@
 
 ## Pretrained models
 
-
-
-
-
-| Name                   | Replay Memory Capacity | Target-network sync-rate |                  Pre-trained models folder                   |
-| :--------------------- | :--------------------: | :----------------------: | :----------------------------------------------------------: |
-| `ll-cap_500000_sr_10`  |         500000         |            10            | [link](https://github.com/LemuelPuglisi/Lunar-Lander-DQN/tree/main/models/ll-cap_500000_sr_10) |
-| `ll-cap_50000_sr_10`   |         50000          |            10            | [link](https://github.com/LemuelPuglisi/Lunar-Lander-DQN/tree/main/models/ll-cap_50000_sr_10) |
-| `ll-cap_5000_sr_10`    |          5000          |            10            | [link](https://github.com/LemuelPuglisi/Lunar-Lander-DQN/tree/main/models/ll-cap_5000_sr_10) |
-| `ll-cap_500000_sr_1`   |         500000         |            1             | [link](https://github.com/LemuelPuglisi/Lunar-Lander-DQN/tree/main/models/ll-cap_500000_sr_1) |
-| `ll-cap_500000_sr_100` |         500000         |           100            | [link](https://github.com/LemuelPuglisi/Lunar-Lander-DQN/tree/main/models/ll-cap_500000_sr_100) |
-
-
+| Replay Memory Capacity | Target-network sync-rate |                  Pre-trained models folder                   |
+| :--------------------: | :----------------------: | :----------------------------------------------------------: |
+|         500000         |            10            | [link](https://github.com/LemuelPuglisi/Lunar-Lander-DQN/tree/main/models/ll-cap_500000_sr_10) |
+|         50000          |            10            | [link](https://github.com/LemuelPuglisi/Lunar-Lander-DQN/tree/main/models/ll-cap_50000_sr_10) |
+|          5000          |            10            | [link](https://github.com/LemuelPuglisi/Lunar-Lander-DQN/tree/main/models/ll-cap_5000_sr_10) |
+|         500000         |            1             | [link](https://github.com/LemuelPuglisi/Lunar-Lander-DQN/tree/main/models/ll-cap_500000_sr_1) |
+|         500000         |           100            | [link](https://github.com/LemuelPuglisi/Lunar-Lander-DQN/tree/main/models/ll-cap_500000_sr_100) |
 
 ## Installation
 

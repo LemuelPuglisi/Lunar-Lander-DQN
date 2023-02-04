@@ -9,7 +9,7 @@ from aicourse.agent import LunarLanderAgent
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--model-ckpt', type=str)
-parser.add_argument('--episodes', type=int, default=3)
+parser.add_argument('--episodes', type=int, default=1)
 args = parser.parse_args()
 
 episodes = args.episodes

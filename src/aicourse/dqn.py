@@ -8,8 +8,8 @@ class QFunc(nn.Module):
     def __init__(self, 
                  action_space=4, 
                  observation_space=8,
-                 hidden_space_1=128, 
-                 hidden_space_2=128):
+                 hidden_space_1=512, 
+                 hidden_space_2=512):
         """
         """
         super(QFunc, self).__init__()

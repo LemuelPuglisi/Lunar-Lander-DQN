@@ -10,7 +10,7 @@
 
 
 <p align="center">
-  <img src="docs/assets/ezgif.com-gif-maker.gif" alt="animated" />
+  <img src="docs/assets/lunar_lander.gif" alt="animated" />
 </p>
 
 <h4 align="center">A simple PyTorch implementation of the Deep Q-Learning algorithm to solve <a href="https://gymnasium.farama.org/environments/box2d/lunar_lander/">Lunar Lander environment from Gymnasium</a>.</h4>

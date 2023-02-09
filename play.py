@@ -16,10 +16,12 @@ episodes = args.episodes
 model_checkpoints = args.model_ckpt
 assert os.path.exists(model_checkpoints), 'Invalid model checkpoints'
 
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
 env = gym.make("LunarLander-v2", render_mode="human")   
 
-qfunc = QFunc(4, 8, 512, 512).to('cuda')
-qfunc.load_state_dict(torch.load(model_checkpoints))
+qfunc = QFunc(4, 8, 512, 512).to(device)
+qfunc.load_state_dict(torch.load(model_checkpoints, map_location=device))
 agent = LunarLanderAgent(qfunc, env)
 
 for _ in range(episodes): 

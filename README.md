@@ -55,9 +55,32 @@ Finally, clone the repository and install the `aicourse` module running the foll
 $ pip install -e .
 ```
 
-## Run Locally
+## Running the model
 
-After installing the project, start the training using `train.py` script: 
+Select one checkpoint from the `models` folder, then use the `play.py` script to let the agent play one episode:
+
+
+```bash
+(your_env) <Lunar-Lander-DQN> python play.py --help
+
+usage: play.py [-h] [--model-ckpt MODEL_CKPT] [--episodes EPISODES]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --model-ckpt MODEL_CKPT
+  --episodes EPISODES
+```
+
+Example: 
+
+```bash
+python play.py --model-ckpt modelsll-cap_500000_sr_10/models/ll-ep50.ckpt
+```
+
+
+## Training
+
+Start the training using `train.py` script: 
 
 ```bash
 (your_env) <Lunar-Lander-DQN> python train.py --help
@@ -73,19 +96,6 @@ optional arguments:
   --batch-size BATCH_SIZE   batch size on trainin phase
   --capacity CAPACITY       capacity of the replay memory
   --sync-rate SYNC_RATE     sync rate of the target network
-```
-
-Visually validate the agent using the `play.py` script: 
-
-```bash
-(your_env) <Lunar-Lander-DQN> python play.py --help
-
-usage: play.py [-h] [--model-ckpt MODEL_CKPT] [--episodes EPISODES]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --model-ckpt MODEL_CKPT
-  --episodes EPISODES
 ```
 
 ## Authors

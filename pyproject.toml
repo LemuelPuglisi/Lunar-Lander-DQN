@@ -18,8 +18,8 @@ classifiers = [
 ]
 dependencies = [
   "numpy",
-  "pytorch",
-  "gymnasium",
+  "torch",
+  "gymnasium[box2d]",
   "tqdm"
 ]
 

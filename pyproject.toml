@@ -17,6 +17,10 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
+  "numpy",
+  "pytorch",
+  "gymnasium",
+  "tqdm"
 ]
 
 [options]

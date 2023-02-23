@@ -21,7 +21,7 @@ img[alt~="right"] {
 
 # **Solving Lunar Lander using Deep Reinforcement Learning**
 
-Project proposal for AI course
+ AI course
 
 Lemuel Puglisi, UniCT - 2023
 

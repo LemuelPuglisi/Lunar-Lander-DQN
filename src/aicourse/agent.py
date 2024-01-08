@@ -17,7 +17,7 @@ class LunarLanderAgent():
         return action
     
     @torch.no_grad()
-    def play_episode(self, buffer, validation=False, eps=0.1):
+    def play_episode(self, buffer, validation=False, eps=0.):
         total_reward = 0
         curr_observations, _ = self.env.reset()
         while True: 

@@ -74,7 +74,7 @@ optional arguments:
 Example: 
 
 ```bash
-python play.py --model-ckpt modelsll-cap_500000_sr_10/models/ll-ep50.ckpt
+python play.py --model-ckpt models/ll-cap_500000_sr_10/models/ll-ep50.ckpt
 ```
 
 

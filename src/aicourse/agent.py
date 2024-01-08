@@ -9,7 +9,7 @@ class LunarLanderAgent():
         self.env = env
     
     @torch.no_grad()
-    def get_action(self, observations, validation=False, eps=0.):
+    def get_action(self, observations, validation=False, eps=0.1):
         if not validation and np.random.random() <= eps: 
             return self.env.action_space.sample() 
         tensor = torch.tensor(observations).unsqueeze(0).to(self.qfunc.device)
@@ -17,7 +17,7 @@ class LunarLanderAgent():
         return action
     
     @torch.no_grad()
-    def play_episode(self, buffer, validation=False, eps=0.1):
+    def play_episode(self, buffer, validation=False, eps=0.):
         total_reward = 0
         curr_observations, _ = self.env.reset()
         while True: 

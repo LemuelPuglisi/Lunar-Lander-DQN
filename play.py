@@ -18,7 +18,7 @@ assert os.path.exists(model_checkpoints), 'Invalid model checkpoints'
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-env = gym.make("LunarLander-v2", render_mode="human")   
+env = gym.make("LunarLander-v3", render_mode="human")   
 
 qfunc = QFunc(4, 8, 512, 512).to(device)
 qfunc.load_state_dict(torch.load(model_checkpoints, map_location=device))

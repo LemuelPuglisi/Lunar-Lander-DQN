@@ -37,7 +37,7 @@ output_path = os.path.join(dest, f'll-cap_{capacity}_sr_{sync_rate}')
 models_path = os.path.join(output_path, 'models')
 os.makedirs(models_path)
 
-env_train = gym.make('LunarLander-v2')
+env_train = gym.make('LunarLander-v3')
 
 policy_net = QFunc(4, 8, 512, 512).to(device)
 target_net = QFunc(4, 8, 512, 512).to(device)
